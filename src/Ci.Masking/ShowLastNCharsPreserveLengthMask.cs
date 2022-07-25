@@ -34,21 +34,19 @@ namespace Ci.Masking
         }
 
         /// <inheritdoc/>
-        public string Mask(string s)
+        public string Mask(string input)
         {
-            if (s == null)
-            {
-                return s;
-            }
+            if (input == null)
+                return null;
 
             // note: preserve length
-            var maskedLength = Math.Max(0, s.Length - _nCharactersToShow);
+            var maskedLength = Math.Max(0, input.Length - _nCharactersToShow);
 
             // see https://www.chinhdo.com/20070929/stringbuilder-part-2/
             var masked =
                 string.Concat(
                     _maskStringPool.GetString(maskedLength) ?? new string(_maskCharacter, maskedLength),
-                    s.SubStringToEnd(_nCharactersToShow));
+                    input.SubStringToEnd(_nCharactersToShow));
             return masked;
         }
     }
