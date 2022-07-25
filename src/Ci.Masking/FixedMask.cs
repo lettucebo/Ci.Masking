@@ -1,6 +1,6 @@
 ﻿using System;
 
-namespace rm.Masking
+namespace Ci.Masking
 {
 	/// <summary>
 	/// A masking impl with a fixed mask.
@@ -9,7 +9,7 @@ namespace rm.Masking
 	{
 		private readonly string fixedMask;
 
-		internal const string DefaultFixedMask = "****";
+        public const string DefaultFixedMask = "****";
 
 		public FixedMask(
 			string fixedMask = DefaultFixedMask)

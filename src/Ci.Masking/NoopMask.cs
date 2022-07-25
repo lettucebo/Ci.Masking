@@ -1,4 +1,4 @@
-﻿namespace rm.Masking
+﻿namespace Ci.Masking
 {
 	/// <summary>
 	/// A masking impl with a noop mask.

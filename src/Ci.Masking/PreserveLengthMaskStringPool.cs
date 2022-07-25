@@ -1,30 +1,25 @@
 ﻿using System;
 
-namespace rm.Masking
+namespace Ci.Masking
 {
 	/// <inheritdoc cref="IMaskStringPool"/>
 	public class PreserveLengthMaskStringPool : IMaskStringPool
 	{
-		private readonly string[] pool;
+		private readonly string[] _pool;
 
 		public PreserveLengthMaskStringPool(
 			byte size,
 			char maskCharacter)
 		{
-			if (size < 0)
-			{
-				throw new ArgumentOutOfRangeException(nameof(size), size, null);
-			}
-
-			pool = new string[size + 1];
+            _pool = new string[size + 1];
 			BuildPool(maskCharacter);
 		}
 
 		private void BuildPool(char maskCharacter)
 		{
-			for (int i = 0; i < pool.Length; i++)
+			for (int i = 0; i < _pool.Length; i++)
 			{
-				pool[i] = new string(maskCharacter, i);
+				_pool[i] = new string(maskCharacter, i);
 			}
 		}
 
@@ -35,7 +30,7 @@ namespace rm.Masking
 			{
 				throw new ArgumentOutOfRangeException(nameof(length), length, null);
 			}
-			return length < pool.Length ? pool[length] : null;
+			return length < _pool.Length ? _pool[length] : null;
 		}
 	}
 }

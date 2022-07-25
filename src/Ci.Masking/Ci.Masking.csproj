@@ -1,0 +1,16 @@
+﻿<Project Sdk="Microsoft.NET.Sdk">
+
+    <PropertyGroup>
+        <TargetFrameworks>netstandard2.0</TargetFrameworks>
+        <Version>1.0.0</Version>
+        <Authors>Money Yu</Authors>
+        <PackageProjectUrl>https://github.com/lettucebo/Ci.Extension</PackageProjectUrl>
+        <PackageIconUrl>https://i.imgur.com/3xZ4Cdx.png</PackageIconUrl>
+        <Description>Provides model, view model and data masking methods.</Description>
+    </PropertyGroup>
+
+    <ItemGroup>
+      <PackageReference Include="Ci.Extensions" Version="6.0.2" />
+    </ItemGroup>
+
+</Project>

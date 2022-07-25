@@ -1,7 +1,6 @@
 ﻿using NUnit.Framework;
-using rm.Masking;
 
-namespace rm.MaskingTest
+namespace Ci.Masking.Test
 {
 	[TestFixture]
 	public class CompressLengthMaskTests

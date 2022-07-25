@@ -1,4 +1,4 @@
-﻿namespace rm.Masking
+﻿namespace Ci.Masking
 {
 	/// <summary>
 	/// Defines methods for a string pool containing masked strings.

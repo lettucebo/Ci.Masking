@@ -1,8 +1,7 @@
 ﻿using System.Diagnostics;
 using NUnit.Framework;
-using rm.Masking;
 
-namespace rm.MaskingTest
+namespace Ci.Masking.Test
 {
 	[TestFixture]
 	internal class PerfTests

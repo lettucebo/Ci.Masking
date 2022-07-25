@@ -1,8 +1,7 @@
 ﻿using NUnit.Framework;
-using rm.Masking;
-using static rm.Masking.FixedMask;
+using static Ci.Masking.FixedMask;
 
-namespace rm.MaskingTest
+namespace Ci.Masking.Test
 {
 	[TestFixture]
 	public class FixedMaskTests

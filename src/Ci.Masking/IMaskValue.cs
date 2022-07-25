@@ -1,4 +1,4 @@
-﻿namespace rm.Masking
+﻿namespace Ci.Masking
 {
 	/// <summary>
 	/// Defines impl for masking.
